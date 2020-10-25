@@ -94,6 +94,7 @@
          background: $profile-img;
          border-radius: 50%;
          border: solid 5px $github-color;
+         z-index: 1;
          // border-color: darken();
       }
    }
