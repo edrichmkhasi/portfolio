@@ -50,6 +50,20 @@
       }
    }
    
+
+   //About Page styles
+   .about-info {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-areas:
+      'bioimg'
+      'bio'
+      'bio'
+      'job1'
+      'job2' 
+      'job3';
+      grid-template-columns: repeat(1, 1fr);
+   }
 }
 
 //smartphones screens

@@ -5,9 +5,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha348-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79V+lsFkW54bOGbiDQ" crossorigin="anonymous">
    <link rel="stylesheet" href="css/main.css">
-   <title>Edrich's Portfolio</title>
+   <title>About Me</title>
 </head>
-<body id="bg-img">
+<body>
    <header>
       <div class="menu-btn">
          <div class="btn-line"></div>
@@ -21,10 +21,10 @@
          </div>
 
          <ul class="menu-nav">
-            <li class="nav-item current">
-               <a href="/" class="nav-link">Home</a>
-            </li>
             <li class="nav-item">
+               <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item current">
                <a href="about.html" class="nav-link">About Me</a>
             </li>
             <li class="nav-item">
@@ -41,10 +41,35 @@
    </header>
 
 
-   <main id="home">
-      <h1 class="lg-heading">Edrich <span class="text-secondary">Mkhasi</span></h1>
-      <h2 class="sm-heading">Programmer, Full-Stack Web Developer, Computer Engineer</h2>
-      <div class="icons">
+   <main id="about">
+      <h1 class="lg-heading">About <span class="text-secondary">Me</span></h1>
+      <h2 class="sm-heading">Let me tell you about myself</h2>
+
+      <div class="about-info">
+         <img src="img/edrich.jpeg" alt="Edrich Mkhasi" class="bio-image">
+
+         <div class="bio">
+            <h3 class="text-secondary">BIO</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores et excepturi nam quisquam nesciunt id voluptate libero at fuga rem modi beatae, sit earum dignissimos numquam repudiandae vel nostrum tempora!</p>
+         </div>
+
+         <div class="job job-1">
+            <h3>123 Webshop</h3>
+            <h6>Hardware Tester</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum debitis obcaecati eaque aperiam! Quasi nesciunt laudantium eum earum cumque.</p>
+         </div>
+         <div class="job job-2">
+            <h3>123 Webshop</h3>
+            <h6>Full Stack Developer</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum debitis obcaecati eaque aperiam! Quasi nesciunt laudantium eum earum cumque.</p>
+         </div>
+         <div class="job job-3">
+            <h3>123 Webshop</h3>
+            <h6>Full Stack Developer</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum debitis obcaecati eaque aperiam! Quasi nesciunt laudantium eum earum cumque.</p>
+         </div>
+      </div>
+      <!-- <div class="icons">
          <a target="blank" href="https://github.com/edrichmkhasi/">
             <i class="fab fa-github fa-2x github"></i>
          </a>
@@ -63,8 +88,14 @@
          <a href="tel:+27603766482">
             <i class="fas fa-phone fa-2x phone"></i>
          </a>
-      </div>
+      </div> -->
    </main>
+
+   <footer id="main-footer">
+      Copyright &copy;
+
+      <script>document.write(new Date().getFullYear())</script>
+   </footer>
 
    <script src="js/main.js"></script>
 </body>
