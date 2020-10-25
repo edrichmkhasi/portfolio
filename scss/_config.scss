@@ -1,0 +1,37 @@
+$primary-color: #444;
+$secondary-color: #eece1a;
+$success-color: #008000;
+$insta-color: #833AB4;
+$facebook-color: #4267B2;
+$github-color: #000;
+$linkedin-color: #0E76A8;
+$gmail-color: #E5511F;
+$phone-color: #008000;
+$show-home-image: true;
+$home-image: url(../img/bg_jhb.jpg);
+$bg-opacity: 0.8;
+
+@mixin easeOut {
+   transition: all 0.5s ease-in-out;
+}
+@mixin background {
+   @if $show-home-image{
+      &#bg-img {
+         background: $home-image;
+         background-size: cover;
+         background-attachment: fixed;
+
+         &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: rgba($primary-color, $bg-opacity);
+         }
+      }
+      
+   }
+}
