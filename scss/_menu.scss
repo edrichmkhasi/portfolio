@@ -63,4 +63,55 @@
       height: 100vh;
       overflow: hidden;
    }
+   &-nav {
+      margin: 0;
+      padding: 0;
+      background: darken($primary-color, 20);
+      list-style: none;
+      transform: translate3d(100%, 0, 0);
+      @include easeOut;
+
+      &.show {
+         // Slide i from right
+         transform: translate3d(0, 0, 0);
+      }
+   }
+
+   // Branding
+   &-branding {
+      background: $primary-color;
+      transform: translate3d(-100%, 0, 0);
+      @include easeOut;
+
+      &.show {
+         // Slide i from left
+         transform: translate3d(0, 0, 0);
+      }
+   
+      .profile {
+         width: 210px;
+         height: 210px;
+         background: $profile-img;
+         border-radius: 50%;
+         border: solid 5px $github-color;
+         // border-color: darken();
+      }
+   }
+
+   .nav-item {
+      transform: translate3d(600px, 0, 0);
+      @include easeOut;
+
+      &.show {
+         // Slide i from right
+         transform: translate3d(0, 0, 0);
+      }
+   }
+}
+
+@for $x from 1 through 5 {
+   .nav-item:nth-child(#{$x} ) {
+      transition-delay: $x * 0.1s;
+   }
+
 }
