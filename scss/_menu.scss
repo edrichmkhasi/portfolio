@@ -106,6 +106,10 @@
          // Slide i from right
          transform: translate3d(0, 0, 0);
       }
+ 
+      &.current > a {
+         color: $secondary-color;
+      }
    }
 }
 
@@ -114,4 +118,20 @@
       transition-delay: $x * 0.1s;
    }
 
+}
+
+.nav-link {
+   display: inline-block;
+   position: relative;
+   font-size: 30px;
+   //text-transform: uppercase;
+   padding: 1rem 0;
+   font-weight: 300;
+   color: #fff;
+   text-decoration: none;
+   @include easeOut;
+
+   &:hover {
+      color: $secondary-color;
+   }
 }
